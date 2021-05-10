@@ -1,0 +1,314 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12459471300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user on the homepage",
+            "match": {
+              "location": "Register.user_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6828488400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on Sign in button",
+            "match": {
+              "location": "Register.user_clicks_on_Sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Create a New User",
+        "description": "",
+        "id": "registration;create-a-new-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4442391200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user fills registration email textbox with \"email_address\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email_address",
+                  "offset": 44
+                }
+              ],
+              "location": "Register.user_fills_with(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2148942700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks create an account button",
+            "match": {
+              "location": "Register.user_clicks()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3513534300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters the following details",
+            "match": {
+              "location": "Register.user_enters_the_following_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "FirstName",
+                  "LastName",
+                  "Password",
+                  "Address",
+                  "City",
+                  "Zip Code",
+                  "MobilePhone",
+                  "AddressAlias"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Chitrali",
+                  "Sharma",
+                  "Inquiry@1234",
+                  "Balagere, Varthur",
+                  "Bangalore",
+                  "00000",
+                  "8105839545",
+                  "My Address"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5326992100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user clicks register button",
+            "match": {
+              "location": "Register.user_click_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68675500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "validate user firstname and lastname is displayed in dashboard",
+            "match": {
+              "location": "Register.validate_user_firstname_lastname()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5100472200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user click on signout",
+            "match": {
+              "location": "Register.click_signout()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9713814000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user on the homepage",
+            "match": {
+              "location": "Register.user_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4806916400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on Sign in button",
+            "match": {
+              "location": "Register.user_clicks_on_Sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "Login with user credentials",
+        "description": "",
+        "id": "registration;login-with-user-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 911580900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user enter \"firstname766@gmail.com\" and \"Inquiry@1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "firstname766@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "Inquiry@1234",
+                  "offset": 41
+                }
+              ],
+              "location": "Register.user_enter_email_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3672474400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user click on Signin button.",
+            "match": {
+              "location": "Register.click_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5418426200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user move cursor over Womens link and click on sub menu T-shirts",
+            "match": {
+              "location": "Register.move_cursor_womens_link_click_Tshirts()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2352033200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Get Name/Text of the first product displayed on the page",
+            "match": {
+              "location": "Register.get_product_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12422408900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "click on Add product to the cart",
+            "match": {
+              "location": "Register.add_product_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13751921800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Proceed to the checkout page and continue till payments",
+            "match": {
+              "location": "Register.proceed_checkout_continue_payment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5573821700,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Validate on the payments page if the product details are correct.",
+            "match": {
+              "location": "Register.validate_payments_page_product_details_correct()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Registration",
+    "description": "",
+    "id": "registration",
+    "keyword": "Feature",
+    "uri": "C:/Users/K D Pandey/eclipse-workspace/OnlineCucumberSeleniumTest/src/main/java/Features/Register.feature"
+  }
+]

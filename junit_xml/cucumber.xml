@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="98.512366">
+    <testcase classname="Registration" name="Create a New User" time="39.888968">
+        <system-out><![CDATA[Given user on the homepage..................................................passed
+And user clicks on Sign in button...........................................passed
+When user fills registration email textbox with "email_address".............passed
+And user clicks create an account button....................................passed
+And user enters the following details.......................................passed
+And user clicks register button.............................................passed
+Then validate user firstname and lastname is displayed in dashboard.........passed
+And user click on signout...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Registration" name="Login with user credentials" time="58.623398">
+        <system-out><![CDATA[Given user on the homepage..................................................passed
+And user clicks on Sign in button...........................................passed
+When user enter "firstname766@gmail.com" and "Inquiry@1234".................passed
+And user click on Signin button.............................................passed
+And user move cursor over Womens link and click on sub menu T-shirts........passed
+And Get Name/Text of the first product displayed on the page................passed
+And click on Add product to the cart........................................passed
+And Proceed to the checkout page and continue till payments.................passed
+Then Validate on the payments page if the product details are correct.......passed
+]]></system-out>
+    </testcase>
+</testsuite>
